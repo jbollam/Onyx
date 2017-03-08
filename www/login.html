@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <title>ONYX Point of Sale</title>
+  <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+</head>
+
+<body data-ng-controller="loginController">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h2><span class="text-warning">ONYX </span><span class="text-success">Point of Sale</span></h2>
+          <span class="pull-right text-muted">Today is Mar 07, 2017</span>
+          <div class="text-muted">Visakhapatnam, AP </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6">
+        <div class="well" style="min-height: 250px;">
+        
+        <form class="navbar-form form" role="form" ng-submit="vm.login()">
+            <div class="form-group row col-sm-12">
+                <input style="width:100%" id="emailInput" placeholder="User Id" class="form-control" type="text" ng-model="vm.user">
+            </div>
+            <div class="form-group row col-sm-12">
+                <input style="width:100%" id="passwordInput" placeholder="password" class="form-control" type="password"  ng-model="vm.pass">
+            </div>
+            <div class="form-group row col-sm-12">
+            <div id="signInInput" data-toggle="buttons" class="btn-group btn-group-xs btn-group-justified">
+              <label class="btn btn-default">
+                  <input type="radio">Admin
+              </label>
+              <label class="btn btn-default">
+                  <input type="radio">Fellow
+              </label>
+              <label class="btn btn-default">
+                  <input type="radio">Coordinator
+              </label>
+            </div>
+            </div>
+            <div class="form-group row col-sm-6">
+              <button type="submit" class="btn btn-primary form-control">Sign In</button></div>
+            <div class="form-group row col-sm-6 ">  
+              <span class="pull-right"><a href="#">Need help?</a></span></div>
+          </form>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
